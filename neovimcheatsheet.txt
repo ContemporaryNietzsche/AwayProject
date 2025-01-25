@@ -1,0 +1,34 @@
+#Neovim with NvChad Keyboard Shortcut Cheat Sheet
+
+  spc t h                           => change theme
+  spc n                             => toggle line numbering
+  spc r n                           => activate relative line numbering
+  :TSInstall *insertProgLanguage*   =>installing syntax highlight for a new language:
+  :TSInstallInfo                    => check which syntax highlight you have installed
+  spc f f                           => opens up file finder
+  spc f b                           => opens up file finder (Only searches between open files)
+  spc c h                           => open default NvChad CheatSheet
+  spc                               => shows command suggestions
+  ctrl h/j/k/l                      => movement/ navigation
+  :vsp                              => vertical split
+  :sp                               => split
+
+File Tree commands:
+
+  Ctrl n                            => OpenOpen file tree (then navigate with j/k and hit enter to open)
+  m                                 => mark a file
+  a + newFileName                   => Creates a new file
+  c                                 => copy file
+  p                                 => paste file
+  r                                 => rename file
+
+Tabbufline commands
+
+  Tab / Shift Tab                   => go between buffers
+  spc x                             => close buffer
+  spc h/v                           => terminal 
+
+to add further customization, modify chadrc.lua(overriding default default nvchad lua commands) or init.lua(nvim options/commands) in ~/.config/nvim/lua/custom
+
+
+
