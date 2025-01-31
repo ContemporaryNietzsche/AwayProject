@@ -1,0 +1,18 @@
+# Aprroximate number system traininng
+
+1. Positions Transfer
+  
+  A step where the two color dots are shown on the screen and the participant is 
+  asked to answer which color has more dots.
+
+2. Enumeration
+
+
+3. Ratio Comparison
+
+4. Math Fluency (this was probably done in paper but on the computer is def cooler)
+
+5. Multi-object tracking (MOT) => I actually didn't read this one yet
+    #TODO: read this part of the paper and understand it
+
+

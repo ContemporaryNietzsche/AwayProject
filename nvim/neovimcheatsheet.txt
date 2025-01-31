@@ -28,7 +28,7 @@ Tabbufline commands
   spc x                             => close buffer
   spc h/v                           => terminal 
 
-to add further customization, modify chadrc.lua(overriding default default nvchad lua commands) or init.lua(nvim options/commands) in ~/.config/nvim/lua/custom
+to add further customization, modify chadrc.lua(overriding default default nvch) or init.lua in ~/.config/nvim/lua/custom
 
 
-
+#TODO lsp server configurations ()

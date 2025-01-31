@@ -231,22 +231,27 @@ def main():
                     pygame.quit()
                     sys.exit()
                 elif event.type == pygame.KEYDOWN:
-                    if event.key == pygame.K_b:
-                        print("blue selected")
-                        if yellow_blue[1] > yellow_blue[0]:
-                            print("correct")
-                            correct_guesses.append(1)
-                        else:
-                            correct_guesses.append(0)
-                    elif event.key == pygame.K_y:
-                        print("yellow selected")
-                        if yellow_blue[1] < yellow_blue[0]:
-                            print("correct")
-                            correct_guesses.append(1)
-                        else:
-                            correct_guesses.append(0)
-                    
-                    waiting_for_input = False
+                    if event.key == pygame.K_b or event.key == pygame.K_y:
+                        # Valid key press
+                        if event.key == pygame.K_b:
+                            print("blue selected")
+                            if yellow_blue[1] > yellow_blue[0]:
+                                print("correct")
+                                correct_guesses.append(1)
+                            else:
+                                correct_guesses.append(0)
+                        elif event.key == pygame.K_y:
+                            print("yellow selected")
+                            if yellow_blue[1] < yellow_blue[0]:
+                                print("correct")
+                                correct_guesses.append(1)
+                            else:
+                                correct_guesses.append(0)
+                        
+                        waiting_for_input = False
+                    else:
+                        # Invalid key press
+                        print("Invalid key. Please press 'b' for blue or 'y' for yellow.")
 
         clock.tick(30)
 
