@@ -172,8 +172,14 @@ def main():
     # telemetry here:
     # https://stackoverflow.com/questions/2961509/python-how-to-create-a-unique-file-name
     # could replace with datetime, or name specifier
-    filename = uuid.uuid4().hex + ".txt"
-    f = open(filename, "x")
+
+    
+    # COMMENTED TO NOT CREATE NEW FILE ******************************************************************************************************************************************
+    # filename = uuid.uuid4().hex + ".txt"
+    # f = open(filename, "x")
+    # ***************************************************************************************************************************************************************************
+
+
     correct_guesses = []
     actual_ratio = []
 
@@ -255,7 +261,10 @@ def main():
 
         clock.tick(30)
 
-    f.write("Correct Guesses: " + str(sum(correct_guesses)) + "\nTotal Guesses: " + str(num_trials))
+    # COMMENTED TO NOT CREATE NEW FILE ******************************************************************************************************************************************
+    # f.write("Correct Guesses: " + str(sum(correct_guesses)) + "\nTotal Guesses: " + str(num_trials))
+    # ***************************************************************************************************************************************************************************
+    
     # Fit logistic function to performance
     x = actual_ratio[:len(correct_guesses)]
     y = correct_guesses
@@ -278,7 +287,11 @@ def main():
     p_thresh79 = np.mean(x2_y2[x2_y2[:, 1] == 79], axis=0)
 
     print("79% Ratio" + str(p_thresh79))
-    f.write("79% Threshold: " + str(p_thresh79))
+
+    # COMMENTED TO NOT CREATE NEW FILE ******************************************************************************************************************************************
+    # f.write("79% Threshold: " + str(p_thresh79))
+    # ***************************************************************************************************************************************************************************
+
 
 if __name__ == "__main__":
     main()
